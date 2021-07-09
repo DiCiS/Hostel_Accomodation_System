@@ -4,12 +4,6 @@
 #include<ctype.h>
 #include<time.h>
 
-struct date {
-    int  day;
-    int  month;
-    int  year;
-};
-
 struct student {
     char name[40];
     int  roll;
@@ -20,8 +14,6 @@ struct student {
     char mobile[12];
     char hostel;
     int  room_no;
-    /*char room_alph;
-    int  room_num;*/
 };
 
 //USER FUNCTIONS:
@@ -78,13 +70,6 @@ int main() {
                 break;
         case 7: clr_file();
                 system("cls");
-                break;
-        case 8: printf("Enter a number: ");
-                scanf("%d",&test);
-                printf("isdigit? = %d",isdigit(test));
-                printf("isalpha? = %d",isalpha(test));
-                getchar();
-                getchar();
                 break;
         }
 
